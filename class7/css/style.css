@@ -1,0 +1,51 @@
+h2 {
+    background-color: black;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.newH2Tag {
+    background-color: brown;
+    height: 500px;
+    background-image: linear-gradient(0deg, white, brown);
+}
+
+/* this is for 2nd h1 tag */
+#newH1Tag {
+    background-color: #b8fbb1 !important;
+    background-image: none;
+    color: rgba(255, 89, 94, 0.5);
+    height: 200px;
+}
+#newH1Tag {
+    background-color: red !important;
+    height: 400px;
+    width: 200px;
+}
+body{
+    background-color: #b8fbb1 !important;
+}
+body {
+    background-color: violet;
+}
+body {
+    background-color: gray;
+}
+.newH2Tag{
+    font-size: 50px;
+}
+.bgred{
+    background-color: red;
+    color: white;
+}
+.bggreen{
+    background-color: green;
+    color: white;
+}
+.navBar{
+    background-color: black;
+    color: white;
+}
+.navBar .whitetext{
+    color: white;
+}
