@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: blueviolet;
+    margin: 0;
+}
+
+h1.newH1 {
+    background-color: red;
+}
+
+h1:not(.newH1) {
+    background-color: rgb(223, 165, 165);
+    color: white;
+    margin: 0px;
+    padding: 20px 50px 90px 120px;
+    /* padding-top: 20px;
+    padding-right: 50px;
+    padding-bottom: 90px;
+    padding-left: 0px; */
+    border: 10px dotted black;
+    /* border-top: 50px solid blue; */
+    /* border-top-color: violet; */
+    width: 200px;
+    height: 200px;
+}
+
+.simpleBorder {
+    border: 10px solid black;
+    width: 220px;
+    height: 220px;
+}
+
+.sampleBorder {
+    width: 0px;
+    height: 0px;
+    border: 10px solid transparent;
+    border-left-color: black;
+    border-right-color: black;
+}
+
+.sampleBox {
+    background-color: black;
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+}
+
+.mainBox {
+    max-width: 500px;
+    width: 100%;
+    background-color: rgba(147, 182, 76, 0.7);
+    margin: 50px auto;
+    padding: 50px;
+    padding-top: calc(50px - 17.93px);
+}
+
+.center {
+    text-align: center;
+    color: white;
+}
+
+.borderBox {
+    background-color: black;
+    padding: 25px;
+    margin: 25px;
+}
+
+.paddingBox {
+    background-color: red;
+    padding: 25px;
+    margin: 25px;
+}
+
+.contentBox {
+    background-color: white;
+    padding: 25px;
+    margin: 25px;
+}
+.contentBox .center{
+    color: black;
+}
