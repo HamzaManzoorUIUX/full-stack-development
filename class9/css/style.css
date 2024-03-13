@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+header.backImg {
+    background-image: url('../images/hfkFdyEY2XbsXX5nG0wXKdUXx6o.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: 100px 100px; */
+    background-attachment: fixed;
+}
+
+.backImgDesign {
+    background-color: aqua;
+    /* height: 400px; */
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    /* font-size: 5rem; */
+    background-position: center center;
+    height: 100vh;
+    /* height: 500px; */
+}
+
+.backImgOne {
+    background-image: url("../images/hfkFdyEY2XbsXX5nG0wXKdUXx6o.png");
+}
+
+.backImgTwo {
+    background-image: url("../images/pexels-benjamin-suter-3617500.jpg");
+}
+
+.backImgThree {
+    background-image: url("../images/pexels-lukas-rodriguez-3573351.jpg");
+}
+
+.backImgFour {
+    background-image: url("../images/pexels-photo-2335126.jpeg");
+}
+
+.backImgFive {
+    background-image: url("../images/pexels-todd-trapani-2754200.jpg");
+}
+
+/* div {
+    background-color: rgb(149, 67, 67);
+    padding: 25px;
+    display: inline;
+}
+
+span {
+    background-color: rgb(17, 184, 64);
+    padding: 25px;
+    margin: 25px;
+    display: block;
+} */
+
+.mainNavBar {
+    background-color: #083f46;
+}
+
+.mainNavBar>img {
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.mainNavBar>ul>li>a {
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+.mainNavBar>ul>li {
+    display: inline-block;
+}
+
+.mainNavBar>ul {
+    list-style: none;
+    display: inline-block;
+    margin: 0px 0px 0px 300px;
+    padding-left: 0px;
+}
+
+.mainNavBar>h3 {
+    display: inline-block;
+    margin: 0px 0px 0px 20px;
+    color: white;
+}
