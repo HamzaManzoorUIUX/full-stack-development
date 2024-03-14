@@ -2,7 +2,9 @@
     box-sizing: border-box;
 }
 
+html,
 body {
+    font-size: 20px;
     margin: 0;
 }
 
@@ -19,9 +21,10 @@ header.backImg {
     /* height: 400px; */
     background-attachment: fixed;
     background-size: cover;
+    /* background-repeat: no-repeat; */
     color: white;
     /* font-size: 5rem; */
-    background-position: center center;
+    background-position: left center;
     height: 100vh;
     /* height: 500px; */
 }
@@ -92,3 +95,19 @@ span {
     margin: 0px 0px 0px 20px;
     color: white;
 }
+
+.persentDiv div {
+    width: 5rem;
+    height: 5rem;
+    background-color: black;
+}
+
+.persentDiv {
+    font-size: 50px;
+    width: 20rem;
+    height: 20rem;
+    background-color: rgba(147, 182, 76, 0.7);
+    margin: 50px auto;
+    /* padding: 50px; */
+}
+
