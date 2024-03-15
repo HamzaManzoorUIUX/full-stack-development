@@ -1,0 +1,67 @@
+body {
+    margin: 0px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.myFlex {
+    display: flex;
+    width: 50%;
+    background-color: red;
+}
+
+.myFlex>.one {
+    /* width: 50%; */
+    background-color: blue;
+    flex-grow: 1;
+}
+
+.myFlex>.two {
+    /* width: 20px; */
+    background-color: rgb(50, 200, 102);
+    flex-grow: 2;
+    flex-shrink: 2;
+    flex-basis: 50px;
+}
+
+.myFlex>.three {
+    /* width: 20px; */
+    background-color: rgb(206, 243, 21);
+    flex-grow: 3;
+    flex-shrink: 1;
+    /* flex: 1 1 50%; */
+}
+
+.row {
+    display: flex;
+    /* background-color: blue; */
+    /* gap: 20px; */
+    flex-wrap: wrap;
+}
+
+.row>.col {
+    /* background-color: aqua; */
+    max-width: 25%;
+    width: 25%;
+    min-width: 25%;
+    min-height: 50px;
+    flex: 1 0 0%;
+    padding: 10px;
+}
+
+.minDiv {
+    /* min-width: 250px; */
+    border: 1px solid gray;
+}
+
+.p-1 {
+    padding: 1rem;
+}
+
+.responsive-img {
+    max-width: 1920px;
+    min-width: 370px;
+    width: 100%;    
+}
