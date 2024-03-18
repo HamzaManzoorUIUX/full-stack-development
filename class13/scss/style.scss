@@ -1,0 +1,36 @@
+$primary: rgb(46, 127, 208);
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.mainNav {
+    background-color: $primary;
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            display: inline-block;
+
+            &>a {
+                color: white;
+                text-decoration: none;
+                padding: 10px 20px;
+                border-radius: 5px;
+            }
+        }
+    }
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: $primary;
+}
