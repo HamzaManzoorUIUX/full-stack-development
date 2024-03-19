@@ -1,0 +1,101 @@
+$primary: #dc7027;
+$primaryHover: #8e4311;
+$textColor: white;
+$textBaseColor: #272727;
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
+.my-nav-bar {
+    background-color: $primary;
+    color: $textColor;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 0px 20px 10px $textBaseColor;
+    z-index: 3;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    // left: 100px;
+    // bottom: 100px;
+
+    &>a {
+        display: block;
+        text-decoration: none;
+        color: $textColor;
+        font-size: 2rem;
+
+    }
+
+    &>ul {
+        display: flex;
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+
+        &>li {
+            &>a {
+                display: block;
+                text-decoration: none;
+                color: $textColor;
+                font-size: 1.5rem;
+                padding: 20px 20px;
+
+                &:hover {
+                    background-color: $primaryHover;
+                    text-decoration: underline;
+                    // color: $textBaseColor;
+                }
+            }
+        }
+    }
+}
+
+.mainHeader {
+    background-color: $primary;
+    height: calc(100vh - 0px);
+    display: flex;
+    justify-content: center;
+    padding-top: 67.2px;
+    // align-items: center;
+}
+
+section {
+    min-height: 100vh;
+    padding: 1px;
+
+    &.boxShadow {
+        position: relative;
+        background-color: #a595ba;
+
+        .shadowOne {
+            width: 250px;
+            height: 250px;
+            background-color: $primary;
+            // margin: 200px;
+            box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.8);
+            position: absolute;
+            top: 100vh;
+            left: 50px;
+            // right: 50px;
+            // bottom: 20px;
+            z-index: 1;
+        }
+
+        .shadowTwo {
+            width: 250px;
+            height: 250px;
+            background-color: $primary;
+            margin: 200px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
+            z-index: 2;
+            position: relative;
+        }
+    }
+}
