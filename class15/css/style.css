@@ -1,0 +1,90 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "manrope";
+  src: url("../fonts/Manrope-VariableFont_wght.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "manrope";
+  src: url("../fonts/static/Manrope-Bold.ttf");
+  font-weight: 700;
+}
+.manrope-400 {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  margin: 0px;
+  font-family: "Manrope", sans-serif;
+}
+body .newNav {
+  height: 100px;
+  width: 100%;
+  background-color: chartreuse;
+}
+body header {
+  height: 100vh;
+  background-color: aquamarine;
+  border-radius: 51% 49% 70% 30%/30% 30% 70% 70%;
+  background-image: linear-gradient(45deg, #3023AE 0%, #FF0099 100%);
+}
+body section.mysection {
+  height: 100vh;
+  overflow: visible;
+  background-color: rgb(207, 207, 216);
+}
+body section.mysection h1 {
+  font-size: 2rem;
+  color: #363333;
+  font-weight: 700;
+  font-family: "manrope";
+  font-style: oblique;
+  text-decoration: underline;
+  text-decoration: overline;
+  text-decoration: line-through;
+  text-decoration: none;
+}
+body .main-nav {
+  background-color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: sticky;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+}
+body .main-nav.top {
+  top: 0px;
+  bottom: auto;
+}
+body .main-nav .brand-logo {
+  display: inline-block;
+  color: wheat;
+}
+body .main-nav ul {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  list-style: none;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+body footer {
+  height: 200vh;
+  background-color: #363333;
+}
