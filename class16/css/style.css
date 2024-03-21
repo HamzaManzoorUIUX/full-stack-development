@@ -1,0 +1,77 @@
+body {
+  margin: 0px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.transformSection {
+  background-color: aliceblue;
+  height: 100vh;
+  border: 1px solid black;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-perspective: 250px;
+          perspective: 250px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+.transformSection .one {
+  width: 200px;
+  height: 200px;
+  background-color: blueviolet;
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+  -webkit-animation: name duration timing-function delay iteration-count direction;
+          animation: name duration timing-function delay iteration-count direction;
+  -webkit-animation: zAxisRotate 2s linear 2s infinite forwards;
+          animation: zAxisRotate 2s linear 2s infinite forwards;
+}
+.transformSection .one:hover {
+  -webkit-transform: scale(3);
+          transform: scale(3);
+}
+.transformSection .one:hover::after {
+  background-color: black;
+  font-size: 30px;
+}
+.transformSection .one::after {
+  content: "Hamza Manzoor";
+  font-size: 20px;
+  color: white;
+  background-color: red;
+  -webkit-transition: all 1s linear;
+  transition: all 1s linear;
+}
+
+@-webkit-keyframes zAxisRotate {
+  0% {
+    -webkit-transform: rotateX(0deg) scale(0);
+            transform: rotateX(0deg) scale(0);
+  }
+  100% {
+    -webkit-transform: rotateX(360deg) scale(1);
+            transform: rotateX(360deg) scale(1);
+  }
+}
+
+@keyframes zAxisRotate {
+  0% {
+    -webkit-transform: rotateX(0deg) scale(0);
+            transform: rotateX(0deg) scale(0);
+  }
+  100% {
+    -webkit-transform: rotateX(360deg) scale(1);
+            transform: rotateX(360deg) scale(1);
+  }
+}

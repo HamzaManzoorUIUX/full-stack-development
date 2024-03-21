@@ -1,0 +1,71 @@
+body {
+    margin: 0px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.transformSection {
+    background-color: aliceblue;
+    height: 100vh;
+    border: 1px solid black;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 250px;
+    transform-style: preserve-3d;
+
+    .one {
+        width: 200px;
+        height: 200px;
+        background-color: blueviolet;
+        transform-origin: left top;
+        // transition: all 5s cubic-bezier(0,1.54,.82,-0.04);
+
+        // transform: rotateX(30deg);
+        animation: name duration timing-function delay iteration-count direction;
+        animation: zAxisRotate 2s linear 2s infinite forwards;
+        // transform: scale(0.5);
+        &:hover {
+            transform: scale(3);
+
+            &::after {
+                background-color: black;
+                font-size: 30px;
+            }
+        }
+
+        &::after {
+            content: 'Hamza Manzoor';
+            font-size: 20px;
+            color: white;
+            background-color: red;
+            transition: all 1s linear;
+        }
+
+        // margin: auto;
+        // position: absolute;
+        // transform: translate(-50%, -50%);
+        // top: 50%;
+        // left: 50%;
+    }
+
+    // .two {
+    //     background-color: red;
+    //     height: 200px;
+    //     width: 200px;
+    //     transform: translate(200px, 200px);
+    // }
+}
+
+@keyframes zAxisRotate {
+    0% {
+        transform: rotateX(0deg) scale(0);
+    }
+
+    100% {
+        transform: rotateX(360deg) scale(1);
+    }
+}
