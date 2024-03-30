@@ -13344,3 +13344,96 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.main-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  -webkit-perspective: 100px;
+          perspective: 100px;
+}
+.main-section button {
+  -webkit-animation: rotateButton 5s linear 0s infinite alternate;
+          animation: rotateButton 5s linear 0s infinite alternate;
+}
+
+.change-font {
+  font-size: 50px;
+  line-height: 5;
+  height: 500px;
+  overflow: hidden;
+}
+
+.my-drop-down {
+  background-color: red;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+}
+.my-drop-down:hover ul {
+  display: block;
+}
+.my-drop-down ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  list-style: none;
+  margin-left: 0px;
+  max-width: 250px;
+  width: 100%;
+  display: none;
+  position: absolute;
+  padding-left: 0px;
+  top: 100%;
+  left: 0px;
+}
+.my-drop-down ul li {
+  background-color: rgb(196, 178, 178);
+}
+.my-drop-down ul li a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  padding: 1rem 0.5rem;
+}
+.my-drop-down ul li a:hover {
+  background-color: rgb(150, 147, 147);
+}
+
+@-webkit-keyframes rotateButton {
+  0% {
+    -webkit-transform: rotateZ(0deg) scale(1) rotateY(0deg);
+            transform: rotateZ(0deg) scale(1) rotateY(0deg);
+    background-color: aqua;
+  }
+  100% {
+    background-color: red;
+    -webkit-transform: rotateZ(360deg) scale(3) rotateY(360deg);
+            transform: rotateZ(360deg) scale(3) rotateY(360deg);
+  }
+}
+
+@keyframes rotateButton {
+  0% {
+    -webkit-transform: rotateZ(0deg) scale(1) rotateY(0deg);
+            transform: rotateZ(0deg) scale(1) rotateY(0deg);
+    background-color: aqua;
+  }
+  100% {
+    background-color: red;
+    -webkit-transform: rotateZ(360deg) scale(3) rotateY(360deg);
+            transform: rotateZ(360deg) scale(3) rotateY(360deg);
+  }
+}

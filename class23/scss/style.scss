@@ -1,0 +1,86 @@
+@import "./bootstrap";
+
+.main-section {
+    display: flex;
+    // background-color: red;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    perspective: 100px;
+
+    button {
+
+        // background-color: aqua;
+        // transition: all 2s ease-in-out;
+        animation: rotateButton 5s linear 0s infinite alternate;
+        // &:hover {
+        //     // transform: translateX(200px);
+        //     transform: rotateZ(360deg);
+        // }
+    }
+}
+
+.change-font {
+    font-size: 50px;
+    line-height: 5;
+    height: 500px;
+    overflow: hidden;
+
+}
+
+.my-drop-down {
+    background-color: red;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+
+    // position: relative;
+    &:hover ul {
+        display: block;
+    }
+
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        margin-left: 0px;
+        max-width: 250px;
+        width: 100%;
+        display: none;
+        position: absolute;
+        padding-left: 0px;
+        top: 100%;
+        left: 0px;
+
+
+        li {
+            background-color: rgb(196, 178, 178);
+
+            a {
+                display: block;
+                text-decoration: none;
+                color: black;
+                font-weight: 700;
+                padding: 1rem 0.5rem;
+
+                &:hover {
+                    background-color: rgb(150, 147, 147);
+                }
+            }
+        }
+    }
+}
+
+@keyframes rotateButton {
+    0% {
+        transform: rotateZ(0deg) scale(1) rotateY(0deg);
+        background-color: aqua;
+    }
+
+    100% {
+        background-color: red;
+        transform: rotateZ(360deg) scale(3) rotateY(360deg);
+    }
+}
