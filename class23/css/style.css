@@ -13409,7 +13409,7 @@ textarea.form-control-lg {
   padding: 1rem 0.5rem;
 }
 .my-drop-down ul li a:hover {
-  background-color: rgb(150, 147, 147);
+  background-color: rgb(191, 5, 5);
 }
 
 @-webkit-keyframes rotateButton {
