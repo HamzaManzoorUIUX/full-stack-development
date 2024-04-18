@@ -1,0 +1,60 @@
+$primary-color: rgb(212, 32, 32);
+
+.top-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $primary-color;
+    padding: 10px;
+    margin-bottom: 10px;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+
+    .logo {
+        a {
+            text-decoration: none;
+            color: white;
+        }
+    }
+
+    button {
+        background-color: rgb(255, 255, 255);
+        color: $primary-color;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+}
+
+.side-nav-bar {
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: -100%;
+    width: 80%;
+    opacity: 0;
+    background-color: $primary-color;
+    transition: all 1s ease-in-out;
+
+    ul {
+        list-style: none;
+        padding-top: 20px;
+
+        li {
+            a {
+                display: block;
+                text-transform: capitalize;
+                text-decoration: none;
+                color: white;
+
+                &:hover {
+                    background-color: rgb(214, 72, 40);
+                }
+            }
+        }
+    }
+
+}
