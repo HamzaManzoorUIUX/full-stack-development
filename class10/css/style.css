@@ -30,6 +30,7 @@ body {
     height: 100px;
     width: 100px;
     background-color: #083f46;
+    margin: 10px;
 }
 .d-flex{
     gap:10px;
